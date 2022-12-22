@@ -13,12 +13,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 @Table(
-        name="students", //defining the name of the table...
-        uniqueConstraints = @UniqueConstraint(
-                name = "emailid_unique",
-               columnNames =  "email_address"
-)//making sure that every value in the table is unique...for instance, making sure that no two students can have the same id...
+        name="students" //defining the name of the table...
 )
+
 public class Student {
 
     @Id//to make the studentId a primary key...
