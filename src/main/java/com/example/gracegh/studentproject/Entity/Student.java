@@ -26,7 +26,7 @@ public class Student {
     )
     //generating the values for the student ids...
     @GeneratedValue(
-            strategy = GenerationType.SEQUENCE,
+            strategy = GenerationType.AUTO,
             generator = "student_sequence"
     )
     @Column(name = "id")
@@ -44,12 +44,6 @@ public class Student {
     )
     private String emailId;
 
-    @Column(name="guardian_name")
-    private String guardianName;
-
-    @Column(name="guardian_email_address")
-    private String guardianEmail;
-
-    @Column(name="guardian_mobile_number")
-    private String guardianMobile;
+    @Embedded
+    private Guardian guardian;
 }

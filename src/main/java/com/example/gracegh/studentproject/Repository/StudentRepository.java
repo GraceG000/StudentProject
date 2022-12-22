@@ -4,6 +4,18 @@ import com.example.gracegh.studentproject.Entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository//making this an actual repository...
 public interface StudentRepository extends JpaRepository<Student, Long> {
+
+     List<Student> findByFirstName(String firstName);
+
+     List<Student> findByFirstNameContains(String name);
+
+     List<Student> findByLastNameNotNull();
+
+     List<Student> findByGuardianGuardianName(String guardianName);
+
+
 }
