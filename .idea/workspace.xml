@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c47d93e-49f8-4454-a930-42eff8eda6c5" name="Changes" comment="Springboot tutorial students application...">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Entity/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Repository/TeacherRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/TeacherRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Entity/CourseMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Entity/CourseMaterial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseMaterialRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseMaterialRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/Course$CourseBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/Course$CourseBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/CourseMaterial$CourseMaterialBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/CourseMaterial$CourseMaterialBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/CourseMaterial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gracegh/studentproject/Entity/CourseMaterial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/gracegh/studentproject/Repository/CourseMaterialRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/gracegh/studentproject/Repository/CourseMaterialRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +69,7 @@
       <recent name="com.example.gracegh.studentproject.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourseRepositoryTest.saveCourseWithTeacher">
+  <component name="RunManager" selected="JUnit.CourseRepositoryTest.findAllPagination">
     <configuration name="CourseMaterialRepositoryTest.SaveCourseMaterial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentProject" />
       <extension name="coverage">
@@ -97,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseMaterialRepositoryTest.printAllCourseMaterials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseRepositoryTest.findAllPagination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentProject" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +95,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.gracegh.studentproject.Repository" />
-      <option name="MAIN_CLASS_NAME" value="com.example.gracegh.studentproject.Repository.CourseMaterialRepositoryTest" />
-      <option name="METHOD_NAME" value="printAllCourseMaterials" />
+      <option name="MAIN_CLASS_NAME" value="com.example.gracegh.studentproject.Repository.CourseRepositoryTest" />
+      <option name="METHOD_NAME" value="findAllPagination" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseRepositoryTest.findAllPagination" />
         <item itemvalue="JUnit.CourseRepositoryTest.saveCourseWithTeacher" />
         <item itemvalue="JUnit.CourseMaterialRepositoryTest.SaveCourseMaterial" />
         <item itemvalue="JUnit.TeacherRepositoryTest.saveTeacher" />
         <item itemvalue="JUnit.CourseRepositoryTest.printCourses" />
-        <item itemvalue="JUnit.CourseMaterialRepositoryTest.printAllCourseMaterials" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +179,7 @@
       <workItem from="1673339477856" duration="1827000" />
       <workItem from="1673366529512" duration="7056000" />
       <workItem from="1673374730203" duration="8000" />
-      <workItem from="1673437773116" duration="10785000" />
+      <workItem from="1673437773116" duration="12728000" />
     </task>
     <task id="LOCAL-00001" summary="Springboot tutorial students application...">
       <created>1671703381048</created>
@@ -283,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673440644868</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Springboot tutorial students application...">
+      <created>1673453858713</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673453858713</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
