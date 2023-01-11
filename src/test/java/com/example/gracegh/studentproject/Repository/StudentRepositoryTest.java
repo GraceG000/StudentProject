@@ -22,9 +22,9 @@ class StudentRepositoryTest {
     public void saveStudent(){
         Student student = Student.builder()
                 .studentId(1L)
-                .emailId("shabbir@gmail.com")
-                .firstName("Shabbir")
-                .lastName("Dawoodi")
+                .emailId("AnnabethBryer34@gmail.com")
+                .firstName("Annabeth")
+                .lastName("Bryer")
                 .build();
 
         studentRepository.save(student);
@@ -34,16 +34,16 @@ class StudentRepositoryTest {
     public void saveStudentWithGuardian(){
 
         Guardian guardian = Guardian.builder()
-                .guardianName("Bernard Tustel")
-                .guardianEmail("BernardoTu@gmail.com")
-                .guardianMobile("1234567891")
+                .guardianName("Hatake Kakashi")
+                .guardianEmail("HatakeKak88@gmail.com")
+                .guardianMobile("0513785503")
                 .build();
 
         Student student = Student.builder()
                 .studentId(2L)
-                .emailId("percyja37@gmail.com")
-                .firstName("Percy")
-                .lastName("Jackson")
+                .emailId("SasuSaku@gmail.com")
+                .firstName("Sasuke")
+                .lastName("Uchiha")
                 .guardian(guardian)
                 .build();
 

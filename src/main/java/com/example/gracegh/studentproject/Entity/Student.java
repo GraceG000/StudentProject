@@ -9,8 +9,8 @@ import javax.persistence.*;
 
 @Entity//to map this class to the database...
 @Data//to invoke the lombok dependency...
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor//to create a constructor with all the fields...
+@NoArgsConstructor//to create a default constructor with no fields...
 @Builder
 @Table(
         name="students" //defining the name of the table...
@@ -26,21 +26,21 @@ public class Student {
     )
     //generating the values for the student ids...
     @GeneratedValue(
-            strategy = GenerationType.AUTO,
-            generator = "student_sequence"
+            strategy = GenerationType.AUTO
+           /* generator = "student_sequence"*/
     )
-    @Column(name = "id")
+    @Column(name = "id")//defining the column name...
     private Long studentId;
 
     @Column(name = "first_name")//defining the column name...
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "last_name")//defining the column name...
     private String lastName;
 
     @Column(
             name="email_address",
-            nullable = false //making sure that this is never null in the table
+            nullable = false //making sure that this is never null in the table...
     )
     private String emailId;
 

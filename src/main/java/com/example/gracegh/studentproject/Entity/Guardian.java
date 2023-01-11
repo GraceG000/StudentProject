@@ -12,8 +12,8 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 
-@Embeddable
-@Data
+@Embeddable//enables you to embed the guardian class into the student class...
+@Data//for creating getters and setters...
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
