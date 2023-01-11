@@ -43,9 +43,11 @@ public class Course {
     )
     private Teacher teacher;
 
+    //a many-to-many relationship will involve three tables, we must create the third one that will have the two tables' id...
     @ManyToMany(
             cascade = CascadeType.ALL
     )
+    //creating the student_course_map table...
     @JoinTable(
             name = "student_course_map",
             joinColumns = @JoinColumn(
