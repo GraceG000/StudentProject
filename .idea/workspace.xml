@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c47d93e-49f8-4454-a930-42eff8eda6c5" name="Changes" comment="Springboot tutorial students application...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gracegh/studentproject/Repository/CourseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/gracegh/studentproject/Repository/CourseRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       <recent name="com.example.gracegh.studentproject.Repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourseRepositoryTest.findAllPagination">
+  <component name="RunManager" selected="JUnit.CourseRepositoryTest.printfindByTitleContaining">
     <configuration name="CourseMaterialRepositoryTest.SaveCourseMaterial" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentProject" />
       <extension name="coverage">
@@ -102,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseRepositoryTest.printCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseRepositoryTest.printfindByTitleContaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StudentProject" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.gracegh.studentproject.Repository" />
       <option name="MAIN_CLASS_NAME" value="com.example.gracegh.studentproject.Repository.CourseRepositoryTest" />
-      <option name="METHOD_NAME" value="printCourses" />
+      <option name="METHOD_NAME" value="printfindByTitleContaining" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseRepositoryTest.printfindByTitleContaining" />
         <item itemvalue="JUnit.CourseRepositoryTest.findAllPagination" />
         <item itemvalue="JUnit.CourseRepositoryTest.saveCourseWithTeacher" />
         <item itemvalue="JUnit.CourseMaterialRepositoryTest.SaveCourseMaterial" />
         <item itemvalue="JUnit.TeacherRepositoryTest.saveTeacher" />
-        <item itemvalue="JUnit.CourseRepositoryTest.printCourses" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +180,7 @@
       <workItem from="1673339477856" duration="1827000" />
       <workItem from="1673366529512" duration="7056000" />
       <workItem from="1673374730203" duration="8000" />
-      <workItem from="1673437773116" duration="12728000" />
+      <workItem from="1673437773116" duration="13420000" />
     </task>
     <task id="LOCAL-00001" summary="Springboot tutorial students application...">
       <created>1671703381048</created>
@@ -279,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673453858713</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Springboot tutorial students application...">
+      <created>1673455823574</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673455823574</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
