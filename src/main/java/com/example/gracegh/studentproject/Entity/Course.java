@@ -3,6 +3,8 @@ package com.example.gracegh.studentproject.Entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "Course")
@@ -40,4 +42,25 @@ public class Course {
             referencedColumnName = "teacherId"
     )
     private Teacher teacher;
+
+    @ManyToMany(
+            cascade = CascadeType.ALL
+    )
+    @JoinTable(
+            name = "student_course_map",
+            joinColumns = @JoinColumn(
+                    name = "course_id",
+                    referencedColumnName = "courseId"
+            ),
+            inverseJoinColumns = @JoinColumn(
+                    name = "student_id",
+                    referencedColumnName = "id"
+            )
+    )
+    private List<Student> students;
+
+    public void addStudents(Student student){
+      if(students == null) students = new ArrayList<>();
+      students.add(student);
+    }
 }

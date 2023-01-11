@@ -1,6 +1,7 @@
 package com.example.gracegh.studentproject.Repository;
 
 import com.example.gracegh.studentproject.Entity.Course;
+import com.example.gracegh.studentproject.Entity.Student;
 import com.example.gracegh.studentproject.Entity.Teacher;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -86,5 +87,29 @@ class CourseRepositoryTest {
         List<Course> courses = courseRepository.findByTitleContaining("D", firstPageTenRecords).getContent();
 
         System.out.println("courses = " + courses);
+    }
+
+    @Test
+    public void saveCourseWithStudentAndTeacher(){
+        Teacher teacher = Teacher.builder()
+                .firstName("Tony")
+                .lastName("Stark")
+                .build();
+
+        Student student = Student.builder()
+                .firstName("Peter")
+                .lastName("Parker")
+                .emailId("parkerpete95@outlook.com")
+                        .build();
+
+        Course course = Course.builder()
+                .title("AI")
+                .credit(12)
+                .teacher(teacher)
+                .build();
+
+        course.addStudents(student);
+
+        courseRepository.save(course);
     }
 }
