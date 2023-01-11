@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest //to make it a test class...
@@ -19,16 +21,23 @@ class CourseMaterialRepositoryTest {
     public void SaveCourseMaterial(){
 
         Course course = Course.builder()
-                .title("DSA")
-                .credit(6)
+                .title(".net")
+                .credit(2)
                 .build();
 
         CourseMaterial courseMaterial = CourseMaterial.builder()
-                .url("www.google.com")
-               .course(course)// I passed the course object created above as a parameter for this...
+                .url("www.networking101.com")
+                .course(course)// I passed the course object created above as a parameter for this...
                 .build();
 //cascading: to pass the properties from the parent element to the child element...this is the solution to the problem of binding course to the courseMaterial to save it...
         repository.save(courseMaterial);
+    }
+
+    @Test
+    public void printAllCourseMaterials(){
+        List<CourseMaterial> courseMaterials = repository.findAll();
+
+        System.out.println("courseMaterials = " + courseMaterials);
     }
 
 }

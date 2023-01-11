@@ -1,9 +1,6 @@
 package com.example.gracegh.studentproject.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -13,6 +10,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@ToString(exclude = "course")
 public class CourseMaterial {
 
     @Id
@@ -27,11 +25,13 @@ public class CourseMaterial {
     )
     private Long courseMaterialId;
     private String url;
-
+//when you want to fetch data, there are two ways to do it...Eager fetching and lazy fetching...
+//with eager fetching, when we are fetching courseMaterial data, the course data will also be fetched. Lazy fetching is the opposite of eager fetching...
     @OneToOne(
-
             //implementing cascading...
-            cascade = CascadeType.ALL
+            cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY, //here we are implementing lazy fetching...
+            optional = false
     )
     @JoinColumn(
             name ="course_id",

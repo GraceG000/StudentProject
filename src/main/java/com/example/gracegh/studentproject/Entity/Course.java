@@ -1,9 +1,6 @@
 package com.example.gracegh.studentproject.Entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -28,4 +25,19 @@ public class Course {
     private Long courseId;
     private String title;
     private Integer credit;
+
+    @OneToOne(
+            mappedBy = "course" //you need a reference of courseMaterial in your course class to define a bidirectional one-to-one relationship...
+    )
+    private CourseMaterial courseMaterial;
+
+    //depicting a many-to-one relationship...It's good to stick to many-to-one relationships...
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "teacher_id",
+            referencedColumnName = "teacherId"
+    )
+    private Teacher teacher;
 }
